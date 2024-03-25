@@ -1,5 +1,5 @@
 ---
-title: "eyzhang24.github.io"
+title: "Elizabeth Zhang"
 ---
 
 This is a Quarto website.
