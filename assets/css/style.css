@@ -212,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100vh;
   /* background: rgba(125, 174, 243, 0.3); */
   /* set background image here */
-  background: url("../img/background2.jpeg") top center; 
+  background: url("../img/background.jpg") top center; 
   background-size: cover;
   left: 20px;
 }
