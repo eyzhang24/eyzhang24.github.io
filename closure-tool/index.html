@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Hospital Closures &amp; Access Impact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="wrap">
+  <header>
+    <h1>Hospital Closures &amp; Access Impact</h1>
+    <div class="tabs">
+      <button class="tab-btn active" data-mode="historical">Historical closures</button>
+      <button class="tab-btn" data-mode="current">Closure simulator</button>
+    </div>
+    <div class="controls">
+      <span id="year-select-wrap"><label>Year: <select id="year-select"></select></label></span>
+      <div id="drive-time-controls"></div>
+      <button id="reset-view">Reset view</button>
+    </div>
+  </header>
+  <div id="main">
+    <div id="mapbox">
+      <canvas id="cv"></canvas>
+      <div id="tip"></div>
+    </div>
+    <div id="side"></div>
+  </div>
+  <div id="legend-footer">Shaded area: population that depended exclusively on the selected hospital within the given drive time. Historical tab: compared against hospitals operating the year before the closure (shown as grey background dots when a specific year is selected). Closure simulator: hypothetically, compared against hospitals operating today, if the selected hospital closed today.</div>
+</div>
+<script src="data/states.js"></script>
+<script src="data/historical_data.js"></script>
+<script src="data/current_data.js"></script>
+<script src="data/current_geom_all.js"></script>
+<script src="map_common.js"></script>
+</body>
+</html>
+
